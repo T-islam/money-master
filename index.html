@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+
+    <!-- tailwind files  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="md:px-[24px]">
+    <!-- header section  -->
+    <header class="text-center mt-4">
+      <h2 class="text-4xl font-bold text-blue-400">Money Master💰</h2>
+    </header>
+    <main class="mt-24">
+      <section class="flex md:flex-row flex-col md:justify-center">
+        <aside class="">
+          <img src="./images/bg.png" alt="" class="w-auto h-[75%]" />
+        </aside>
+        <section class="w-[50%] p-6 bg-gray-100">
+          <h1 class="text-3xl text-center font-semibold my-4">Income</h1>
+          <div>
+            <p class="flex justify-between mb-3">
+              Income:<input
+                required
+                id="income-input"
+                type="text"
+                placeholder="Amount"
+                class="input input-bordered input-sm w-auto max-w-xs ml-4 bg-gray-300"
+              />
+            </p>
+          </div>
+          <div>
+            <h1 class="text-3xl text-center font-semibold my-4">Expenses</h1>
+            <p class="flex justify-between mb-3">
+              Food:<input
+                required
+                id="Food-input"
+                type="text"
+                placeholder="Amount"
+                class="input input-bordered input-sm w-auto max-w-xs ml-4 bg-gray-300"
+              />
+            </p>
+            <p class="flex justify-between mb-3">
+              Rent:<input
+                required
+                id="Rent-input"
+                type="text"
+                placeholder="Amount"
+                class="input input-bordered input-sm w-auto max-w-xs ml-4 bg-gray-300"
+              />
+            </p>
+            <p class="flex justify-between mb-3">
+              Clothes:<input
+                required
+                id="Clothes-input"
+                type="text"
+                placeholder="Amount"
+                class="input input-bordered input-sm w-auto max-w-xs ml-4 bg-gray-300"
+              />
+            </p>
+            <button id="calculate-btn" class="btn btn-wide">Calculate</button>
+          </div>
+          <section>
+            <h2 class="text-2xl text-center my-6 font-semibold">
+              Total Expenses: <span id="expence-amount">5500</span>
+            </h2>
+            <h2 class="text-1xl text-center my-6 font-semibold">
+              Balance: <span id="balance">5500</span>
+            </h2>
+            <p class="flex justify-between items-center mb-3 w-[200px] mx-auto">
+              <span>
+                Save:<input
+                  id="percent-input"
+                  type="text"
+                  placeholder="amount"
+                  class="input input-bordered input-sm w-[60px] max-w-xs ml-4 bg-gray-300 text-[10px]"
+                />
+              </span>
+              <span>
+                <span class="font-bold">%</span>
+                <button class="btn btn-sm" id="save">Save</button>
+              </span>
+            </p>
+            <h2 class="text-1xl text-center mt-6 mb-2 font-semibold">
+              Saving Amount:<span id="save-amount">2000</span>
+            </h2>
+            <h2 class="text-1xl text-center font-semibold">
+              Remaining Balance:<span id="final-balance">2500</span>
+            </h2>
+          </section>
+        </section>
+      </section>
+    </main>
+    <!-- script file  -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
